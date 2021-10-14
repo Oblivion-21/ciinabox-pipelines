@@ -54,8 +54,8 @@ Resources:
     Properties:
       Roles:
           - Fn::Sub: "testinstancerole${stackName}"
-    DependsOn:
-        Fn::Sub: "testinstancerole${stackName}"
+      DependsOn: testInstanceRole
+
 
 
   testinstance:
